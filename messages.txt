@@ -1,0 +1,1 @@
+Place your message here each line = new message the tool will close itself when all the messages has been sent 
