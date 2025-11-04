@@ -67,7 +67,7 @@ async def send_dm(token, user_id, messages, idx):
 
     @client.event
     async def on_ready():
-        log(f"bot #{idx} logged in as {client.user.name}", token)
+        log(f"bot {idx} logged in as {client.user.name}", token)
         try:
             user = await client.fetch_user(user_id)
             for msg in messages:
@@ -166,3 +166,4 @@ if __name__ == "__main__":
     except KeyboardInterrupt:
         print(f"\n{BLUE}[$]{RESET} Closing.")
         sys.exit(0)
+
